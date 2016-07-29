@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Serif;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 10px;
+  font-size: 1.75em;
+}
+
+div{
+  position: relative;
+}
+
+p{
+  width: 90%;
+  height: 150px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.sec_title{
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 100px;
+  font-size: 1.25em;
+  color: white;
+  border: 1px solid black;
+}
+.sec{
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;    
+}
+#chicken{
+  background-color: #F2FBA2;
+}
+#chicken > .sec_title{
+  background-color: #B77300;
+}
+#beef{
+  background-color: #F8BDBD;
+}
+#beef > .sec_title{
+  background-color: #CB1D30;
+}
+#sushi{
+  background-color: #C5FDEC;
+}
+#sushi > .sec_title{
+  background-color: #107A54;
+}
+
+/* For Desktop */
+@media (min-width: 992px){
+  .col-lg-4{ 
+    float: left;
+    width: 30%; 
+    margin-right: 1.66%;
+    margin-left: 1.66%;
+  }
+}
+
+/* For Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-6, .col-md-12{
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .col-md-6{ width: 46%; }
+  .col-md-12{ width: 96%; }
+}
