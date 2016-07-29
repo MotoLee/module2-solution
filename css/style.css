@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  font-family: Helvetica, Arial, Serif;
+  font-family: Arial, Helvetica, Serif;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ p{
 }
 
 .sec_title{
-  font-family: "Arial Black";
+  /*font-family: "Arial Black";*/
   position: absolute;
   top: -1px;
   right: -1px;
@@ -34,8 +34,11 @@ p{
 }
 .sec{
   border: 1px solid black;
-  width:90%; 
-  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
 }
 .chicken{
   background-color: #F2FBA2;
@@ -58,21 +61,18 @@ p{
 
 /* For Desktop */
 @media (min-width: 992px){
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
-  .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+  .col-lg-4{ 
     float: left;
-    /*border: 5px solid green;*/
+    width: 33.33%; 
   }
-  .col-lg-4{ width: 33.33%; }
 }
 
 /* For Tablet */
 @media (min-width: 768px) and (max-width: 991px){
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
-  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+  .col-md-6, .col-md-12{
     float: left;
-    /*border: 5px solid blue;*/
   }
   .col-md-6{ width: 50%; }
   .col-md-12{ width: 100%; }
+  .sec-md{ width: 95%; }
 }
